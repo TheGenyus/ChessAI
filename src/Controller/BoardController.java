@@ -1,29 +1,33 @@
 package Controller;
 
 import Model.Board;
+import Vue.ChessWindow;
+
+import javax.swing.*;
 
 public class BoardController {
 
     private Board itsBoard;
+    private ChessWindow itsWindow;
 
     public BoardController(){
         itsBoard = new Board();
+        itsWindow = new ChessWindow(this);
+        new MouseController(itsWindow);
         initPieces();
     }
 
-    public int [][] getItsBoard() {
+    public int [][] getItsBoard()
+    {
         return itsBoard.boardTab;
     }
 
-    public void initPieces()
-    {
-        for(int y = 0 ; y < 8 ; y++)
-        {
+    public void initPieces() {
+        for (int y = 0; y < 8; y++) {
             this.itsBoard.boardTab[1][y] = 11; // Init pion noir
         }
 
-        for(int y = 0 ; y < 8 ; y++)
-        {
+        for (int y = 0; y < 8; y++) {
             this.itsBoard.boardTab[6][y] = 1; // Init pion blanc
         }
 

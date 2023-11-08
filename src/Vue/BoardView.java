@@ -7,12 +7,12 @@ import javax.swing.*;
 import java.awt.*;
 
 public class BoardView extends JPanel {
-    private BoardController itsBoard;
-    private Images itsImages;
+    private final BoardController itsBoard;
+    private final Images itsImages;
 
-    public BoardView()
+    public BoardView(BoardController board)
     {
-        itsBoard = new BoardController();
+        itsBoard = board;
         itsImages = new Images();
     }
 
@@ -94,5 +94,4 @@ public class BoardView extends JPanel {
             }
         }
     }
-
 }
