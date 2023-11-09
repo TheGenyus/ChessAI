@@ -6,18 +6,18 @@ import java.io.File;
 import java.io.IOException;
 
 public class Images {
-    private BufferedImage pionBImage;
-    private BufferedImage pionNImage;
-    private BufferedImage tourBImage;
-    private BufferedImage tourNImage;
-    private BufferedImage reineBImage;
-    private BufferedImage reineNImage;
-    private BufferedImage roiBImage;
-    private BufferedImage roiNImage;
-    private BufferedImage fouBImage;
-    private BufferedImage fouNImage;
-    private BufferedImage chevalBImage;
-    private BufferedImage chevalNImage;
+    private final BufferedImage pionBImage;
+    private final BufferedImage pionNImage;
+    private final BufferedImage tourBImage;
+    private final BufferedImage tourNImage;
+    private final BufferedImage reineBImage;
+    private final BufferedImage reineNImage;
+    private final BufferedImage roiBImage;
+    private final BufferedImage roiNImage;
+    private final BufferedImage fouBImage;
+    private final BufferedImage fouNImage;
+    private final BufferedImage chevalBImage;
+    private final BufferedImage chevalNImage;
 
     public Images()
     {

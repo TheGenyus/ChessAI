@@ -23,4 +23,6 @@ public class ChessWindow extends JFrame {
     public BoardView getItsBoard() {
         return itsBoard;
     }
+
+
 }

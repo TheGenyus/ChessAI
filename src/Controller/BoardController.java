@@ -9,9 +9,13 @@ public class BoardController {
 
     private Board itsBoard;
     private ChessWindow itsWindow;
+    private Player player1;
+    private Player player2;
 
     public BoardController(){
         itsBoard = new Board();
+        player1 = new Player(true);
+        player2 = new Player(false);
         itsWindow = new ChessWindow(this);
         new MouseController(itsWindow);
         initPieces();
@@ -54,5 +58,13 @@ public class BoardController {
 
         this.itsBoard.boardTab[7][4] = 5; // Init roi blanc
         this.itsBoard.boardTab[7][3] = 6; // Init reine blanc
+    }
+
+    public Player getPlayer1() {
+        return player1;
+    }
+
+    public Player getPlayer2() {
+        return player2;
     }
 }
