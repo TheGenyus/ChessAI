@@ -17,7 +17,7 @@ public class BoardController {
         player1 = new Player(true);
         player2 = new Player(false);
         itsWindow = new ChessWindow(this);
-        new MouseController(itsWindow);
+        new MouseController(itsWindow, player1, player2);
         initPieces();
     }
 

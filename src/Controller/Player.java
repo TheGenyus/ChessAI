@@ -86,6 +86,18 @@ public class Player {
         }
     }
 
+    public String getPiece(int x, int y)
+    {
+        for(Piece piece : itsPieces)
+        {
+            if(x == piece.x && y == piece.y)
+            {
+                return piece.getItsName();
+            }
+        }
+        return null;
+    }
+
     public ArrayList<Piece> getItsPieces() {
         return itsPieces;
     }
